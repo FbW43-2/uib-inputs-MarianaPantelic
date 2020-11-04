@@ -1,0 +1,52 @@
+:root {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-size: 1.8rem;
+}
+header {
+  background-color: rgba(96, 96, 237, 0.248);
+  padding: 2rem;
+  text-align: center;
+}
+header button,
+input {
+  font-size: 2rem;
+}
+::placeholder {
+  color: lightblue;
+}
+main form {
+  width: 30%;
+  margin: 2% auto;
+  font-size: 2rem;
+}
+form label,
+legend {
+  display: block;
+  padding: 1rem;
+}
+main input,
+textarea {
+  width: 90%;
+  margin: 2rem;
+}
+button {
+  width: 10rem;
+  background-color: rgba(96, 96, 237, 0.645);
+  font-size: 2rem;
+  margin: 3rem;
+}
+.submit {
+  text-align: center;
+}
+fieldset {
+  background-color: rgba(96, 96, 237, 0.248);
+}
+input:invalid {
+  background-color: rgba(192, 50, 50, 0.734);
+}
+input:focus {
+  border: solid 3px black;
+}
