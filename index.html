@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <form method="GET" action="/search">
-            <input type="text" placeholder="Search article...">
+        <form method="GET" action="/search-article">
+            <input type="search" aria-label="Search article" name="q" placeholder="Search article...">
             <button type="submit">Search</button>
         </form>
     </header>
     <main role="main">
-        <form action="#" method="GET">
+        <form action="#" method="POST">
             <fieldset>
                 <legend>Upload an article</legend>
                 <div>

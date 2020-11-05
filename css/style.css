@@ -14,7 +14,7 @@ header button,
 input {
   font-size: 2rem;
 }
-::placeholder {
+header input::placeholder {
   color: lightblue;
 }
 main form {
@@ -44,9 +44,11 @@ button {
 fieldset {
   background-color: rgba(96, 96, 237, 0.248);
 }
-input:invalid {
+input:invalid,
+textarea:invalid {
   background-color: rgba(192, 50, 50, 0.734);
 }
-input:focus {
+input:focus,
+textarea:focus {
   border: solid 3px black;
 }
