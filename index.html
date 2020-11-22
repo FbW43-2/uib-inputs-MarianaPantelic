@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Inputs</title>
+</head>
+<body>
+    <header>
+        <form method="GET" action="/search-article">
+            <input type="search" aria-label="Search article" name="q" placeholder="Search article...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main role="main">
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Upload an article</legend>
+                <div>
+                    <label for="headline">Headline</label>
+                    <input type="text" name="headline" id="headline" minlength="15" maxlength="30" required>
+                </div>
+                <div>
+                    <label for="headline-optional">Headline 2 (Optional)</label>
+                    <input type="text" name="headline-optional" id="headline-optional" minlength="15" maxlength="50">
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="30" rows="10" minlength="40" maxlength="300" required></textarea>
+                </div>
+                <div>
+                    <label for="input-password">Password</label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        id="input-password" name="input-password" required>
+                </div>
+                <div>
+                    <label for="input-file">Upload an image</label>
+                    <input type="file" id="input-file" name="input-file" accept="image/*" multiple>
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
